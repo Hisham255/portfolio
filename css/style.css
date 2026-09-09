@@ -1,0 +1,75 @@
+/* * global css file  */
+
+
+:root {
+
+    /* ! colors */
+
+
+
+
+
+
+
+    /* ! fonts */
+    --boo-font: "Black Ops One";
+    --inter-font: "Inter", sans-serif;
+    --playfair-font: "Playfair Display", serif;
+
+}
+
+/* ! global elements edit */
+html {
+    scrollbar-width: thin;
+}
+
+
+/* ! header section start */
+
+.first-screen {
+    animation: welcome 2s ease-in-out 0s normal forwards;
+}
+
+@keyframes welcome {
+    0% {
+        background-color: black;
+    }
+
+    95% {
+        background-color: black;
+    }
+
+    100% {
+        background-color: transparent;
+        display: none;
+    }
+
+}
+
+.animation-ele {
+    animation: ele 2s ease-in-out 0s normal forwards;
+}
+
+@keyframes ele {
+    0% {
+        opacity: 1;
+    }
+    
+    90% {
+        
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
+
+
+.first-screen .welcome-text {
+    font-family: var(--boo-font);
+}
+
+/* ? header section end */
