@@ -18,10 +18,38 @@
 
 }
 
-/* ! global elements edit */
+/* * global elements edit */
 html {
     scrollbar-width: thin;
+    scrollbar-gutter: stable;
 }
+
+/* * golbal animation  */
+
+@keyframes l2r {
+    from {
+        visibility: visible;
+        transform: translateX(-600px);
+    }
+
+    to {
+        visibility: visible;
+        transform: translateX(0px);
+    }
+}
+
+.font-boo {
+    font-family: var(--boo-font);
+}
+
+.font-playfair {
+    font-family: var(--playfair-font);
+}
+
+.font-inter {
+    font-family: var(--inter-font);
+}
+
 
 
 /* ! header section start */
@@ -67,19 +95,12 @@ html {
 }
 
 
+/* ! navbar section start */
 
-.font-boo {
-    font-family: var(--boo-font);
+#header nav .web-icon {
+    animation: l2r 0.8s ease-in-out 1.8s normal forwards;
+    visibility: hidden;
 }
-
-.font-playfair {
-    font-family: var(--playfair-font);
-}
-
-.font-inter {
-    font-family: var(--inter-font);
-}
-
 
 #btn-nav {
     display: none;
@@ -141,6 +162,71 @@ html {
     }
 
 }
+
+/* ? navbar and sidebar end*/
+
+/* ! hero section start */
+.photo-section img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.photo-section img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+
+/* todo the animation's delay + 2s "the first sdreen should end first" */
+
+.hero-section div h1 {
+    animation: l2r 1s ease-in-out 2s normal forwards;
+    visibility: hidden;
+}
+
+.hero-section div h2 {
+    animation: l2r 1.2s ease-in-out 2.05s normal forwards;
+    visibility: hidden;
+}
+
+.hero-section div p:nth-of-type(1) {
+    animation: l2r 1.2s ease-in-out 2.1s normal forwards;
+    visibility: hidden;
+}
+
+@keyframes type {
+    0%{width: 0; visibility: visible; border-color:#fff;}
+    
+
+    100%{
+        border-color:transparent;
+        visibility: visible;
+    }
+
+
+}
+
+.hero-section div p:nth-of-type(2) {
+    visibility: hidden;
+    width: 50ch;
+    border-right: 2px solid transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: type forwards;
+    animation-delay: 3.3s;
+    animation-timing-function: steps(68ch);
+    animation-duration: 5s;
+    animation-direction:alternate ;
+    animation-iteration-count: infinite; 
+    
+}
+
+
+
+
+/* ? hero section end */
+
+
 
 
 /* ? header section end */

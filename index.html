@@ -32,9 +32,9 @@
 
     <!-- ! header section start -->
 
-    <header id="header" class="h-[700px]">
+    <header id="header">
 
-        <section class="container">
+        <section class="w-full">
 
             <!-- ! first screen start -->
             <section
@@ -89,19 +89,24 @@
             <nav class=" w-full h-[70px] grid grid-cols-3 bg-black px-5 fixed z-50 border-b-1 border-white">
 
 
-                <a class="w-full flex items-center text-white font-boo text-2xl lg:text-4xl col-span-2" href="index.html">
-                    <h2>Portfolio</h2>
+                <a class="web-icon w-full flex items-center text-white font-boo text-3xl lg:text-4xl col-span-2"
+                    href="index.html">
+                    <h2 class="first-letter:text-cyan-500">Portfolio</h2>
                 </a>
 
                 <div id="navbar-list" class=" flex items-center justify-end">
 
-                    <a class=" w-fit h-fit mx-3 text-white font-inter md:text-md lg:text-lg" onclick="closeSideBar()" href="index.html#hobbies">Hobbies</a>
+                    <a class=" w-fit h-fit mx-3 text-white font-inter md:text-md lg:text-lg" onclick="closeSideBar()"
+                        href="index.html#hobbies">Hobbies</a>
 
-                    <a class=" w-fit h-fit mx-3 text-white font-inter md:text-md lg:text-lg" onclick="closeSideBar()" href="index.html#projects">Projects</a>
+                    <a class=" w-fit h-fit mx-3 text-white font-inter md:text-md lg:text-lg" onclick="closeSideBar()"
+                        href="index.html#projects">Projects</a>
 
-                    <a class=" w-fit h-fit mx-3 text-white font-inter md:text-md lg:text-lg" onclick="closeSideBar()" href="index.html#skills">Skills</a>
+                    <a class=" w-fit h-fit mx-3 text-white font-inter md:text-md lg:text-lg" onclick="closeSideBar()"
+                        href="index.html#skills">Skills</a>
 
-                    <a class=" w-fit h-fit mx-3 text-white font-inter md:text-md lg:text-lg" onclick="closeSideBar()" href="index.html#about">About</a>
+                    <a class=" w-fit h-fit mx-3 text-white font-inter md:text-md lg:text-lg" onclick="closeSideBar()"
+                        href="index.html#about">About</a>
 
                 </div>
 
@@ -115,7 +120,51 @@
             </nav>
             <!-- ? navbar section end -->
 
+            <!-- ! hero section start -->
+            <section class="hero-section pt-25 pb-7 px-[3%] grid grid-cols-2 bg-black">
 
+                <div class="col-span-2 md:col-span-1">
+                    <h1 class=" font-boo text-3xl sm:text-4xl lg:text-5xl tracking-widest text-cyan-500  ">Hisham Ahmed
+                    </h1>
+
+                    <h2 class="font-boo text-2xl sm:text-3xl lg:text-4xl tracking-wider text-cyan-600 ">Lotfy Hussein
+                    </h2>
+
+                    <hr class="border-0 h-[2px] bg-cyan-700 w-[50%]">
+
+                    <p class="font-playfair text-md sm:text-lg lg:text-xl mt-5 text-cyan-400 ">Full Stack Web Devoloper
+                    </p>
+
+                    <p class="font-playfair text-sm sm:text-md lg:text-lg text-cyan-400 ">I'm a always seeks excellence and to stand out in whatever I do.</p>
+
+
+                    <div class="flex mt-7 flex-row justify-start flex-wrap">
+                        <a href="index.html#projects"
+                            class="bg-slate-800 mt-4 text-cyan-300 px-4 py-1 text-[12px] sm:text-sm lg:text-md rounded-sm font-inter mr-4"><i
+                                class="fa-solid fa-check"></i> My Work</a>
+
+
+                        <a href="index.html#contact"
+                            class="bg-slate-800 mt-4 text-cyan-300 px-4 py-1 text-[12px] sm:text-sm lg:text-md rounded-sm font-inter mr-4"><i
+                                class="fa-solid fa-envelope"></i> Contact me</a>
+
+
+
+                        <a href="assets/files/resume.pdf" download="resume.pdf" target="_blank"
+                            class="bg-slate-800 mt-4 text-cyan-300 px-4 py-1 text-[12px] sm:text-sm lg:text-md rounded-sm font-inter mr-4">
+                            <i class="fa-solid fa-file-arrow-down "></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+
+                <div class="photo-section col-span-2 md:col-span-1 pt-15 md:pt-5">
+                    <img src="img/img.jpeg"
+                        class="w-[65%] mx-auto rounded-md mb-2 shadow-md opacity-95 shadow-cyan-600">
+
+                </div>
+
+            </section>
+            <!-- ? hero section end -->
 
 
         </section>
@@ -130,8 +179,8 @@
     <main>
 
 
-        <aside id="side-bar" class=" bg-black w-[60%] p-1 fixed top-[70px] right-0 z-40">
-           
+        <aside id="side-bar" class=" bg-black w-[60%] p-1 fixed top-[70px] right-0 z-40 border border-white opacity-90">
+
         </aside>
 
         <div id="overlay" onclick="closeSideBar()" class=" w-full h-full fixed z-30 inset-0"></div>
