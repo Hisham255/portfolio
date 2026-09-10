@@ -25,9 +25,9 @@ html {
 }
 
 body {
-    
+    background-color: black;
     background-image:
-        radial-gradient(circle at 20% 20%, rgba(114, 62, 255, 0.324) 0%, transparent 15%),
+        radial-gradient(circle at 20% 20%, rgba(114, 62, 255, 0.324 ) 0%, transparent 15%),
         radial-gradient(circle at 80% 70%, rgba(239, 0, 215, 0.45) 0%, transparent 40%);
 }
 
