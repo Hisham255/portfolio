@@ -127,7 +127,8 @@ html {
     margin-top: 20px;
     font-size: 20px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.053);
+    
+
 
 }
 
@@ -220,13 +221,52 @@ html {
     animation-iteration-count: infinite; 
     
 }
-
-
-
-
 /* ? hero section end */
 
-
-
-
 /* ? header section end */
+
+/* ! about section start */
+
+#about article::before{
+    content: "";
+    position: absolute;
+    inset: -50%;
+    background: conic-gradient(from 0deg,
+        transparent 0%,
+        #06b6d4 15%,
+        transparent 30%
+    );
+
+    animation: spiner 3s linear infinite;
+}
+
+#about article::after{
+    content: "";
+    position: absolute;
+    inset: 3px;
+    background: black;
+    border-radius: 14px;
+
+}
+
+@keyframes spiner {
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+
+#about img{
+    box-shadow: 0 0 20px #0669fe;
+}
+
+@media (max-width:1023px) {
+    
+    #about img{
+        box-shadow: none;
+    }
+}
+
+
+/* ? about section end */
+

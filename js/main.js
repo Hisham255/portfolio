@@ -1,11 +1,3 @@
-// nav => div -> id = navbar-list 
-// 
-// btn - > id = btn-nav
-// 
-// aside  id = side-bar => div 
-// 
-// div -> id = overlay
-// 
 
 
 // ! navbar responsive section start
