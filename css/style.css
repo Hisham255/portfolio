@@ -168,7 +168,7 @@ html {
 
 /* ! hero section start */
 .photo-section img {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
     cursor: pointer;
 }
 
@@ -258,6 +258,10 @@ html {
 
 #about img{
     box-shadow: 0 0 20px #0669fe;
+}
+
+#about a{
+    transition: 0.8s;
 }
 
 @media (max-width:1023px) {
