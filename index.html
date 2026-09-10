@@ -28,16 +28,16 @@
 
 </head>
 
-<body class="bg-blue-50">
+<body class="bg-blue-50 h-[3000px]">
 
     <!-- ! header section start -->
 
-    <header class="relative h-[700px]">
+    <header id="header" class="relative h-[700px]">
 
         <section class="container">
 
             <!-- ! first screen start -->
-            <section
+            <!-- <section
                 class="first-screen w-full bg-black h-full flex flex-col justify-center items-center absolute z-[100]">
 
 
@@ -59,18 +59,18 @@
                 </div>
 
                 <h2 data-aos="fade-right" data-aos-duration="1000"
-                    class="welcome-text animation-ele  text-4xl mt-4 tracking-widest text-white ">
+                    class="font-boo animation-ele  text-4xl mt-4 tracking-widest text-white ">
                     Welcome To My
                 </h2>
 
                 <div class="flex justify-center items-center animation-ele ">
                     <h2 data-aos="fade-up" data-aos-duration="1000"
-                        class="welcome-text text-4xl mx-2 mt-4 tracking-widest text-cyan-500 ">
+                        class="font-boo text-4xl mx-2 mt-4 tracking-widest text-cyan-500 ">
                         Portfolio
                     </h2>
 
                     <h2 data-aos="fade-up" data-aos-duration="1400"
-                        class="welcome-text text-4xl mx-2 mt-4 tracking-widest text-cyan-500 ">
+                        class="font-boo text-4xl mx-2 mt-4 tracking-widest text-cyan-500 ">
                         Website
                     </h2>
                 </div>
@@ -82,12 +82,36 @@
                 </div>
 
 
-            </section>
+            </section> -->
             <!-- ? first screen end -->
 
             <!-- ! navbar section start -->
-            <nav class="w-full grid grid-cols-4 fixed z-50">
-                
+            <nav class=" w-full h-[70px] grid grid-cols-3 bg-black px-5 fixed z-50 border-b-1 border-white">
+
+
+                <a class="w-full flex items-center text-white font-boo text-2xl lg:text-4xl col-span-2" href="index.html">
+                    <h2>Portfolio</h2>
+                </a>
+
+                <div id="navbar-list" class=" flex items-center justify-end">
+
+                    <a class=" w-fit h-fit mx-3 text-white font-inter md:text-md lg:text-lg" onclick="closeSideBar()" href="index.html#hobbies">Hobbies</a>
+
+                    <a class=" w-fit h-fit mx-3 text-white font-inter md:text-md lg:text-lg" onclick="closeSideBar()" href="index.html#projects">Projects</a>
+
+                    <a class=" w-fit h-fit mx-3 text-white font-inter md:text-md lg:text-lg" onclick="closeSideBar()" href="index.html#skills">Skills</a>
+
+                    <a class=" w-fit h-fit mx-3 text-white font-inter md:text-md lg:text-lg" onclick="closeSideBar()" href="index.html#about">About</a>
+
+                </div>
+
+                <div class="flex sm:hidden items-center justify-end">
+
+                    <button id="btn-nav"
+                        class=" w-fit h-fit text-white text-right font-inter text-2xl cursor-pointer"><i
+                            class="fa-solid fa-bars"></i></button>
+                </div>
+
             </nav>
             <!-- ? navbar section end -->
 
@@ -105,6 +129,12 @@
 
     <main>
 
+
+        <aside id="side-bar" class=" bg-black w-[60%] p-1 fixed top-[70px] right-0 z-40">
+           
+        </aside>
+
+        <div id="overlay" onclick="closeSideBar()" class=" w-full h-full fixed z-30 inset-0"></div>
     </main>
 
     <!-- ? main section end -->
