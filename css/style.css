@@ -274,3 +274,11 @@ html {
 
 /* ? about section end */
 
+/* ! skills section start */
+
+#skills div{
+    background-image: url(../img/skills.jfif);
+    background-size: cover;
+}
+
+/* ? skills section end */

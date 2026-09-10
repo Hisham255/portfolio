@@ -58,7 +58,7 @@ function getTextWidth(text, element) {
 p.addEventListener('animationiteration', () => {
     iterationCount++;
 
-    if(iterationCount == 0){
+    if (iterationCount == 0) {
         p.textContent = texts[0];
     }
 
@@ -67,10 +67,148 @@ p.addEventListener('animationiteration', () => {
         p.textContent = texts[currentIndex];
 
         const width = getTextWidth(texts[currentIndex], p);
-        
+
         p.style.width = `${width}px`;
         p.style.animationTimingFunction = `steps(${texts[currentIndex].length})`;
     }
 });
 
 // ? hero section end
+
+
+
+// ! skills section start
+
+const skills = document.querySelector(" #skills div");
+
+var skillsList = [
+    {
+        skill_title: "HTML",
+        skill_img: "fa-brands fa-html5",
+        skill_color: "text-orange-600"
+    },
+
+    {
+        skill_title: "CSS",
+        skill_img: "fa-brands fa-css",
+        skill_color: "text-purple-700"
+    },
+
+    {
+        skill_title: "JavaScript",
+        skill_img: "fa-brands fa-square-js",
+        skill_color: "text-yellow-500"
+    },
+
+    {
+        skill_title: "BootStrap",
+        skill_img: "fa-brands fa-bootstrap",
+        skill_color: "text-purple-700"
+    },
+
+    {
+        skill_title: "TailWind",
+        skill_img: "fa-brands fa-tailwind-css",
+        skill_color: "text-teal-700"
+    },
+
+    {
+        skill_title: "C++",
+        skill_img: "fa-solid fa-code",
+        skill_color: "text-blue-700"
+    },
+    {
+        skill_title: "Git",
+        skill_img: "fa-brands fa-git-alt",
+        skill_color: "text-orange-600"
+    },
+    {
+        skill_title: "GitHub",
+        skill_img: "fa-brands fa-github",
+        skill_color: "text-gray-800"
+    },
+    {
+        skill_title: "Java",
+        skill_img: "fa-brands fa-java",
+        skill_color: "text-red-600"
+    },
+    {
+        skill_title: "PHP",
+        skill_img: "fa-brands fa-php",
+        skill_color: "text-indigo-600"
+    },
+    {
+        skill_title: "SQL",
+        skill_img: "fa-solid fa-database",
+        skill_color: "text-blue-600"
+    },
+    {
+        skill_title: "Python",
+        skill_img: "fa-brands fa-python",
+        skill_color: "text-yellow-500"
+    },
+    {
+        skill_title: "OOP",
+        skill_img: "fa-solid fa-cubes",
+        skill_color: "text-green-600"
+    },
+    {
+        skill_title: "Figma",
+        skill_img: "fa-brands fa-figma",
+        skill_color: "text-purple-500"
+    },
+
+    {
+        skill_title: "Chess",
+        skill_img: "fa-solid fa-chess-knight",
+        skill_color: "text-green-800"
+    },
+    {
+        skill_title: "P Solving",
+        skill_img: "fa-solid fa-puzzle-piece",
+        skill_color: "text-amber-500"
+    },
+    {
+        skill_title: "DS",
+        skill_img: "fa-solid fa-sitemap",
+        skill_color: "text-violet-600"
+    },
+    {
+        skill_title: "Algorithms",
+        skill_img: "fa-solid fa-list-check",
+        skill_color: "text-rose-500"
+    },
+    {
+        skill_title: "Terminal",
+        skill_img: "fa-solid fa-terminal",
+        skill_color: "text-gray-700"
+    },
+
+
+
+
+]
+
+var skillData = "";
+
+for (var i = 0; i < skillsList.length; i++) {
+    var skillsContent = `
+                <article class="flex flex-col justify-between cursor-pointer items-center p-3 rounded-lg bg-gray-300 hover:bg-gray-400 w-[100px] h-[102px] m-3 hover:scale-110">
+                    <span class="${skillsList[i].skill_color} text-5xl "><i class="${skillsList[i].skill_img}"></i></span>
+                    <h6 class="text-black font-inter font-bold mt-1" >${skillsList[i].skill_title}</h6>
+                </article>
+                `
+
+    skillData = skillData + skillsContent;
+}
+
+skills.innerHTML = skillData;
+
+// ? skills section end
+
+
+
+
+
+
+
