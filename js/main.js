@@ -187,7 +187,7 @@ var skillsList = [
 
 
 
-]
+];
 
 var skillData = "";
 
@@ -206,9 +206,78 @@ skills.innerHTML = skillData;
 
 // ? skills section end
 
+// ! projects section start
+
+const projects = document.querySelector(".projects-container");
+
+var projectsList = [
+
+    {
+        project_img: "img/projects/Al-sabiqun.png",
+        project_name: "Al Sabiqun",
+        project_link: "https://hisham255.github.io/AL-Sabiqun/pages/sabiqun.html",
+        project_p: "A website dedicated to the story of the sahaba and some aspects of the life of the Prophet Muhammad ﷺ.",
+        project_end: "Aug 10"
+    },
+    {
+        project_img: "img/projects/Al-sabiqun.png",
+        project_name: "Al Sabiqun",
+        project_link: "https://hisham255.github.io/AL-Sabiqun/pages/sabiqun.html",
+        project_p: "A website dedicated to the story of the sahaba and some aspects of the life of the Prophet Muhammad ﷺ.",
+        project_end: "Aug 10"
+    },
+    {
+        project_img: "img/projects/Al-sabiqun.png",
+        project_name: "Al Sabiqun",
+        project_link: "https://hisham255.github.io/AL-Sabiqun/pages/sabiqun.html",
+        project_p: "A website dedicated to the story of the sahaba and some aspects of the life of the Prophet Muhammad ﷺ.",
+        project_end: "Aug 10"
+    },
 
 
+];
+
+var projectData = "";
+
+for (var i = 0; i < projectsList.length; i++) {
+
+    var projectContent = `
+      <article data-aos="fade-up" data-aos-duration="${1500 + (i * 200)}" 
+                    class="group bg-transparent rounded-2xl border border-cyan-200 overflow-hidden hover:shadow-xl hover:border-cyan-100 hover:-translate-y-1 transition-all duration-300 m-2">
+                    
+                    <a href="${projectsList[i].project_link}" class="block" target="_blank"
+                        rel="noopener noreferrer">
+
+                        <!-- Image -->
+                        <div class="overflow-hidden h-44">
+                            <img src="${projectsList[i].project_img}" alt="${projectsList[i].project_name} preview"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                        </div>
+
+                        <!-- Content -->
+                        <div class="p-5 flex flex-col gap-2">
+                            <h4 class="text-white font-medium text-base font-inter leading-snug">${projectsList[i].project_name}</h4>
+                            <p class="text-gray-400 text-sm leading-relaxed line-clamp-2">
+                                ${projectsList[i].project_p}
+                            </p>
+                            
+                            <div class="flex items-center justify-between mt-1">
+                                <h6 class="text-xs text-gray-400">${projectsList[i].project_end}</h6>
+                                <span
+                                    class="text-xs text-cyan-400 font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                                    View <i class="fa-solid fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                    </a>
+                </article>
+    `
+
+    projectData = projectData + projectContent;
+}
+
+projects.innerHTML = projectData;
 
 
-
-
+// ? projects section end

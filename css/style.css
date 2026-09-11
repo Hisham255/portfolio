@@ -27,8 +27,8 @@ html {
 body {
     background-color: black;
     background-image:
-        radial-gradient(circle at 20% 20%, rgba(114, 62, 255, 0.324 ) 0%, transparent 15%),
-        radial-gradient(circle at 80% 70%, rgba(239, 0, 215, 0.45) 0%, transparent 40%);
+        radial-gradient(circle at 20% 20%, rgba(114, 62, 255, 0.324) 0%, transparent 15%),
+        radial-gradient(circle at 80% 50%, rgba(239, 0, 215, 0.45) 0%, transparent 40%);
 }
 
 /* * golbal animation  */
@@ -134,7 +134,7 @@ body {
     margin-top: 20px;
     font-size: 20px;
     text-align: center;
-    
+
 
 
 }
@@ -203,11 +203,15 @@ body {
 }
 
 @keyframes type {
-    0%{width: 0; visibility: visible; border-color:#fff;}
-    
+    0% {
+        width: 0;
+        visibility: visible;
+        border-color: #fff;
+    }
 
-    100%{
-        border-color:transparent;
+
+    100% {
+        border-color: transparent;
         visibility: visible;
     }
 
@@ -224,30 +228,30 @@ body {
     animation-delay: 3.3s;
     animation-timing-function: steps(68ch);
     animation-duration: 5s;
-    animation-direction:alternate ;
-    animation-iteration-count: infinite; 
-    
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
 }
+
 /* ? hero section end */
 
 /* ? header section end */
 
 /* ! about section start */
 
-#about article::before{
+#about article::before {
     content: "";
     position: absolute;
     inset: -50%;
     background: conic-gradient(from 0deg,
-        transparent 0%,
-        #06b6d4 15%,
-        transparent 30%
-    );
+            transparent 0%,
+            #06b6d4 15%,
+            transparent 30%);
 
     animation: spiner 3s linear infinite;
 }
 
-#about article::after{
+#about article::after {
     content: "";
     position: absolute;
     inset: 3px;
@@ -257,23 +261,23 @@ body {
 }
 
 @keyframes spiner {
-    to{
+    to {
         transform: rotate(360deg);
     }
-    
+
 }
 
-#about img{
+#about img {
     box-shadow: 0 0 20px #0669fe;
 }
 
-#about a{
+#about a {
     transition: 0.8s;
 }
 
 @media (max-width:1023px) {
-    
-    #about img{
+
+    #about img {
         box-shadow: none;
     }
 }
@@ -283,7 +287,7 @@ body {
 
 /* ! skills section start */
 
-#skills div{
+#skills div {
     background-image: url(../img/skills.jfif);
     background-size: cover;
 }
