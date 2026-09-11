@@ -219,20 +219,7 @@ var projectsList = [
         project_p: "A website dedicated to the story of the sahaba and some aspects of the life of the Prophet Muhammad ﷺ.",
         project_end: "Aug 10"
     },
-    {
-        project_img: "img/projects/Al-sabiqun.png",
-        project_name: "Al Sabiqun",
-        project_link: "https://hisham255.github.io/AL-Sabiqun/pages/sabiqun.html",
-        project_p: "A website dedicated to the story of the sahaba and some aspects of the life of the Prophet Muhammad ﷺ.",
-        project_end: "Aug 10"
-    },
-    {
-        project_img: "img/projects/Al-sabiqun.png",
-        project_name: "Al Sabiqun",
-        project_link: "https://hisham255.github.io/AL-Sabiqun/pages/sabiqun.html",
-        project_p: "A website dedicated to the story of the sahaba and some aspects of the life of the Prophet Muhammad ﷺ.",
-        project_end: "Aug 10"
-    },
+
 
 
 ];
