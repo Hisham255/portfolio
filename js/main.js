@@ -268,3 +268,10 @@ projects.innerHTML = projectData;
 
 
 // ? projects section end
+
+
+// ! footer section start
+
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// ? footer section end

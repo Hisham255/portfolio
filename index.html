@@ -96,16 +96,13 @@
 
             <div id="navbar-list" class=" flex items-center justify-end">
 
-                <a class=" w-fit h-fit mx-3 text-white font-inter md:text-base lg:text-lg" onclick="closeSideBar()"
-                    href="index.html#hobbies">Hobbies</a>
-
-                <a class=" w-fit h-fit mx-3 text-white font-inter md:text-base lg:text-lg" onclick="closeSideBar()"
+                <a class=" w-fit h-fit mx-5 text-white font-inter md:text-base lg:text-lg" onclick="closeSideBar()"
                     href="index.html#projects">Projects</a>
 
-                <a class=" w-fit h-fit mx-3 text-white font-inter md:text-base lg:text-lg" onclick="closeSideBar()"
+                <a class=" w-fit h-fit mx-5 text-white font-inter md:text-base lg:text-lg" onclick="closeSideBar()"
                     href="index.html#skills">Skills</a>
 
-                <a class=" w-fit h-fit mx-3 text-white font-inter md:text-base lg:text-lg" onclick="closeSideBar()"
+                <a class=" w-fit h-fit mx-5 text-white font-inter md:text-base lg:text-lg" onclick="closeSideBar()"
                     href="index.html#about">About</a>
 
             </div>
@@ -139,20 +136,22 @@
                     to stand out in whatever I do.</p>
 
 
-                <div class="flex mt-7 flex-row justify-start flex-wrap">
+                <div class="flex mt-7 flex-row flex-wrap  md:flex-col items-start">
                     <a href="index.html#projects"
-                        class="bg-slate-800 mt-4 text-cyan-300 px-4 py-1 text-[12px] sm:text-sm lg:text-base rounded-sm font-inter mr-4"><i
+                        class="bg-slate-800 mt-6 text-cyan-300 px-4 py-1 text-[12px] sm:text-sm lg:text-base rounded-sm font-inter mr-4 md:w-[50%]"><i
                             class="fa-solid fa-check"></i> My Work</a>
 
 
                     <a href="index.html#about"
-                        class="bg-slate-800 mt-4 text-cyan-300 px-4 py-1 text-[12px] sm:text-sm lg:text-base rounded-sm font-inter mr-4"><i
+                        class="bg-slate-800 mt-6 text-cyan-300 px-4 py-1 text-[12px] sm:text-sm lg:text-base rounded-sm font-inter mr-4 md:w-[50%]"><i
                             class="fa-solid fa-envelope"></i> Contact me</a>
 
+                    <a href="https://github.com/Hisham255/portfolio" target="_blank"
+                        class="bg-slate-800 mt-6 text-cyan-300 px-4 py-1 text-[12px] sm:text-sm lg:text-base rounded-sm font-inter mr-4 md:w-[50%]"><i class="fa-brands fa-square-github"></i> Code</a>
 
 
                     <a href="assets/files/resume.pdf" download="resume.pdf" target="_blank"
-                        class="bg-slate-800 mt-4 text-cyan-300 px-4 py-1 text-[12px] sm:text-sm lg:text-base rounded-sm font-inter mr-4">
+                        class="bg-slate-800 mt-6 text-cyan-300 px-4 py-1 text-[12px] sm:text-sm lg:text-base rounded-sm font-inter mr-4 md:w-[50%]">
                         <i class="fa-solid fa-file-arrow-down "></i> Download Resume
                     </a>
                 </div>
@@ -255,8 +254,8 @@
 
 
         <!-- ! projects section start -->
-        <section id="projects" class="pt-15 pb-5 px-5 w-[90%] mx-auto mb-20">
-            <h3 class="font-boo text-2xl sm:text-3xl tracking-wide text-cyan-600">My Projects:</h3>
+        <section id="projects" class="pt-15 px-5 w-[90%] mx-auto">
+            <h3 class="font-boo text-2xl sm:text-3xl tracking-wide text-cyan-600">Some Projects:</h3>
 
             <!-- * cards container -->
             <div class="projects-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-7  w-full">
@@ -265,7 +264,6 @@
 
         </section>
         <!-- ? projects section end -->
-
 
 
         <!-- ! sidebar section start -->
@@ -283,7 +281,97 @@
 
     <!-- ! footer section start -->
 
-    <footer>
+    <footer class="bg-transparent border-t border-white/10 text-white pt-5 mt-20">
+
+
+        <div class="max-w-5xl mx-auto px-10 py-16">
+
+            <!--*   title -->
+            <h2 data-aos="fade-right" data-aos-duration="2000" class="text-5xl sm:text-6xl font-bold tracking-tight text-white mb-12">
+                Hisham<span class="text-cyan-400 text-4xl sm:text-5xl">.</span>
+            </h2>
+
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+                <div data-aos="fade-up" data-aos-duration="2000">
+                    <h3 class="text-xs font-semibold tracking-widest text-gray-500 mb-4">SERVICES</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        "What I offer" — UI design, front-end dev,back-end dev, responsive layouts.
+                    </p>
+
+                </div>
+                
+                <div data-aos="fade-up" data-aos-duration="2000">
+                    <h3 class="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-4">HOPPIES</h3>
+                    <ul class="flex flex-col gap-2.5">
+                        <li>
+                            <a href="https://www.chess.com/member/hishamolla" target="_blank" rel="noopener noreferrer"
+                                class="text-sm text-gray-300 hover:text-cyan-400 transition-colors duration-200 flex items-center gap-2 group">
+                                <i
+                                    class="fa-solid fa-chess-knight text-xs text-gray-500 group-hover:text-cyan-400 transition-colors"></i>
+                                Chess
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.imdb.com/user/p.zqiowdx4jqiwejwm6jblxroire/lists/?ref_=ls_nv_lst" target="_blank" rel="noopener noreferrer"
+                                class="text-sm text-gray-300 hover:text-cyan-400 transition-colors duration-200 flex items-center gap-2 group">
+                                <i
+                                    class="fa-solid fa-film text-xs text-gray-500 group-hover:text-cyan-400 transition-colors"></i>
+                                Art
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <div data-aos="fade-up" data-aos-duration="2000">
+                    <h3 class="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-4">Contact</h3>
+                    <ul class="flex flex-col gap-2.5">
+                        <li>
+                            <a href="mailto:hishamlotfy556.com"
+                                class="text-sm text-gray-300 hover:text-cyan-400 transition-colors duration-200 flex items-center gap-2">
+                                <i class="fa-solid fa-envelope text-xs text-gray-500"></i>
+                                Email me
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/201080593817" target="_blank" rel="noopener noreferrer"
+                                class="text-sm text-gray-300 hover:text-cyan-400 transition-colors duration-200 flex items-center gap-2">
+                                <i class="fa-brands fa-whatsapp text-xs text-gray-500"></i>
+                                WhatsApp
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/hisham-lotfy-25h/" target="_blank" rel="noopener noreferrer"
+                                class="text-sm text-gray-300 hover:text-cyan-400 transition-colors duration-200 flex items-center gap-2">
+                                <i class="fa-brands fa-linkedin text-xs text-gray-500"></i>
+                                LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div data-aos="fade-up" data-aos-duration="2000">
+                    <h3 class="text-xs font-semibold tracking-widest text-gray-500 mb-4">ABOUT</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Web developer focused on clean interfaces and meaningful experiences.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        
+        <div class="border-t border-white/10">
+            <div class="max-w-5xl mx-auto px-6 py-5">
+                <p  class="text-xs text-gray-600">
+                    &copy; <span id="year"></span> Hisham. All rights reserved.
+                </p>
+
+            </div>
+        </div>
 
     </footer>
 
